@@ -1,6 +1,5 @@
 const db = require("../models");
 const Observation = db.observation;
-const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
   // Validate request

@@ -8,6 +8,8 @@ module.exports = (sequelize, Sequelize) => {
     },
     dateTime: {
       type: Sequelize.STRING,
+      allowNull: false,
+      unique: "date_time",
     },
     period: {
       type: Sequelize.INTEGER,

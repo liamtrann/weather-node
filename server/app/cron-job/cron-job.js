@@ -3,7 +3,7 @@ const axios = require("axios");
 const db = require("../models");
 const Observation = db.observation;
 
-cron.schedule("*/10 * * * *", () => {
+cron.schedule("0 0 */1 * * *", () => {
   const lat = 43.5100092;
   const long = -79.8976626;
   axios

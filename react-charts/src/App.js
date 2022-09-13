@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import BarChart from "./components/BarChart";
 import LineChart from "./components/LineChart";
-import { UserData } from "./Data";
 import axios from "axios";
 import { useEffect } from "react";
 
@@ -32,7 +31,7 @@ function App() {
       datasets: [
         {
           label: label,
-          data: allData.map((data) => data.wind),
+          data: allData.map((data) => data.temperature),
           backgroundColor: [
             "rgba(75,192,192,1)",
             "#ecf0f1",

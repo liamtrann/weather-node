@@ -3,10 +3,10 @@ module.exports = (app) => {
 
   var router = require("express").Router();
 
-  // Create a new Tutorial
+  // Create a new ShortTerm
   router.post("/", shortTerm.create);
 
-  // Retrieve all Tutorials
+  // Retrieve all Shortterm
   router.get("/", shortTerm.findAll);
 
   app.use("/api/shortTerm", router);
